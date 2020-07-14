@@ -4,10 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-window.renderMicrofrontend1 = (containerId, history) => {
+window.renderMicrofrontend1 = (containerId, history, data) => {
   ReactDOM.render(
     <React.StrictMode>
-      <App />
+      <App data={data}/>
     </React.StrictMode>,
     document.getElementById(containerId)
   );  
